@@ -53,9 +53,10 @@ params:
     enabled: true
     title: "Dmytro Kovalchuk"
     subtitle: |
-      Founding AI Engineer at [Parcha](https://parcha.com), building production LLM agents for compliance automation.
+      I turn AI **demos** into **production** systems
 
-      I write about AI systems that have to work in production—not just in demos.
+      Founding AI Engineer at [Parcha](https://parcha.com)<br>
+      I write about making AI reliable enough to bet your business on
     imageUrl: "/avatar.jpg"
     imageWidth: 150
     imageHeight: 150
