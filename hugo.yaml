@@ -1,5 +1,5 @@
 baseURL: "https://kdmytro.com/"
-title: "Dmytro K"
+title: "Dmytro Kovalchuk"
 theme: PaperMod
 
 pagination:
@@ -16,10 +16,10 @@ minify:
 
 params:
   env: production
-  title: "Dmytro K"
-  description: "Personal blog"
-  keywords: [Blog, Portfolio, Tech]
-  author: "Dmytro K"
+  title: "Dmytro Kovalchuk"
+  description: "Founding AI Engineer building production LLM systems"
+  keywords: [AI, LLM, Machine Learning, Agents, Engineering]
+  author: "Dmytro Kovalchuk"
   DateFormat: "January 2, 2006"
   defaultTheme: auto
   disableThemeToggle: false
@@ -45,17 +45,24 @@ params:
     disableFingerprinting: false
 
   label:
-    text: "Dmytro K"
+    text: "Dmytro Kovalchuk"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
   homeInfoParams:
     Title: "Hey there!"
-    Content: Welcome to my personal blog. I write about tech, software engineering, and things I'm learning.
+    Content: |
+      I'm a Founding AI Engineer at [Parcha](https://parcha.com), building production LLM agents for compliance automation.
+
+      I write about AI systems that have to work in production—not just in demos.
 
   socialIcons:
     - name: github
       url: "https://github.com/KDmytro"
+    - name: linkedin
+      url: "https://linkedin.com/in/kdmytro"
+    - name: x
+      url: "https://x.com/kdmytro"
     - name: email
       url: "mailto:kdmytro@gmail.com"
 
@@ -79,9 +86,9 @@ menu:
       name: Posts
       url: /posts/
       weight: 10
-    - identifier: archives
-      name: Archives
-      url: /archives/
+    - identifier: about
+      name: About
+      url: /about/
       weight: 20
     - identifier: search
       name: Search
