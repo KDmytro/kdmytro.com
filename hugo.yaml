@@ -49,12 +49,17 @@ params:
     icon: /apple-touch-icon.png
     iconHeight: 35
 
-  homeInfoParams:
-    Title: "Hey there!"
-    Content: |
-      I'm a Founding AI Engineer at [Parcha](https://parcha.com), building production LLM agents for compliance automation.
+  profileMode:
+    enabled: true
+    title: "Dmytro Kovalchuk"
+    subtitle: |
+      Founding AI Engineer at [Parcha](https://parcha.com), building production LLM agents for compliance automation.
 
       I write about AI systems that have to work in production—not just in demos.
+    imageUrl: "/avatar.jpg"
+    imageWidth: 150
+    imageHeight: 150
+    imageTitle: "Dmytro Kovalchuk"
 
   socialIcons:
     - name: github
