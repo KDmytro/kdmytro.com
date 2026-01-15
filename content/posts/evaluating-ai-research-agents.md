@@ -100,6 +100,3 @@ This is a work in progress. The eval framework will evolve as we learn what actu
 
 If you're working on similar problems — evaluating AI agents that produce long-form outputs, especially in regulated domains — I'd love to compare notes. Reach out on [LinkedIn](https://www.linkedin.com/in/kdmytro/).
 
----
-
-*I'm building [Grep.ai](https://grep.ai), an AI-powered business due diligence platform. We're hiring. If turning AI demos into production systems sounds interesting, let's talk.*
