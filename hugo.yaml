@@ -53,10 +53,9 @@ params:
     enabled: true
     title: "Dmytro Kovalchuk"
     subtitle: |
-      I turn AI **demos** into **production** systems
-
+      I turn AI **demos** into **production** systems<br><br>
       Founding AI Engineer at [Parcha](https://parcha.com)<br>
-      I write about building, deploying, and evaluating AI agents in real life
+      I write about building, deploying, and evaluating AI agents in real life<br>
     imageUrl: "/avatar.jpg"
     imageWidth: 150
     imageHeight: 150
