@@ -95,13 +95,6 @@ menu:
       name: About
       url: /about/
       weight: 20
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 30
-    - identifier: tags
-      name: Tags
-      url: /tags/
       weight: 40
 
 outputs:
