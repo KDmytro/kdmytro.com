@@ -95,7 +95,6 @@ menu:
       name: About
       url: /about/
       weight: 20
-      weight: 40
 
 outputs:
   home:

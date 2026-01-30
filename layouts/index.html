@@ -1,0 +1,48 @@
+{{- define "main" }}
+
+{{- if .Site.Params.profileMode.enabled }}
+<div class="profile">
+    {{- with .Site.Params.profileMode }}
+    <div class="profile_inner">
+        {{- if .imageUrl }}
+        <img draggable="false" src="{{ .imageUrl }}" alt="{{ .title }}" title="{{ .imageTitle }}"
+            height="{{ .imageHeight }}" width="{{ .imageWidth }}" />
+        {{- end }}
+        <h1>{{ .title }}</h1>
+        <span>{{ .subtitle | markdownify }}</span>
+        {{- with $.Site.Params.socialIcons }}
+        <div class="social-icons">
+            {{- range . }}
+            <a href="{{ .url }}" target="_blank" rel="noopener noreferrer me" title="{{ .name | title }}">
+                {{ partial "svg.html" . }}
+            </a>
+            {{- end }}
+        </div>
+        {{- end }}
+    </div>
+    {{- end }}
+</div>
+{{- end }}
+
+<h2 style="margin-top: 2rem; margin-bottom: 1rem;">Recent Posts</h2>
+
+{{- $pages := where .Site.RegularPages "Section" "posts" }}
+{{- $paginator := .Paginate $pages }}
+
+{{- range $paginator.Pages }}
+<article class="post-entry">
+    <header class="entry-header">
+        <h2>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+    </header>
+    <div class="entry-content">
+        <p>{{ .Summary | plainify | truncate 150 }}</p>
+    </div>
+    <footer class="entry-footer">
+        <span>{{ .Date.Format "January 2, 2006" }}</span>
+    </footer>
+</article>
+{{- end }}
+
+{{- end }}
