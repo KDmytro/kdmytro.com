@@ -24,7 +24,9 @@
 </div>
 {{- end }}
 
-<h2 style="margin-top: 2rem; margin-bottom: 1rem;">Recent Posts</h2>
+<hr style="margin: 2rem 0; border: none; border-top: 1px solid #ddd;">
+
+<h2 style="margin-top: 1rem; margin-bottom: 1rem;">Recent Posts</h2>
 
 {{- $pages := where .Site.RegularPages "Section" "posts" }}
 {{- $paginator := .Paginate $pages }}
