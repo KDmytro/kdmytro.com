@@ -46,9 +46,17 @@
         ul {
             padding-left: 1.5em;
             margin: 0.5em 0;
+            page-break-inside: avoid;
         }
         li {
             margin: 0.25em 0;
+            page-break-inside: avoid;
+        }
+        h3 {
+            page-break-after: avoid;
+        }
+        p + ul {
+            page-break-before: avoid;
         }
         strong {
             font-weight: 600;
