@@ -31,9 +31,28 @@
         ul { padding-left: 1.5rem; }
         li { margin: 0.3rem 0; }
         strong { font-weight: 600; }
+        .print-btn {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .print-btn:hover { background: #0055aa; }
+        @media print {
+            body { background: white; margin: 0; }
+            .container { border: none; box-shadow: none; padding: 0; }
+            .print-btn { display: none; }
+        }
     </style>
 </head>
 <body>
+    <button class="print-btn" onclick="window.print()">Save as PDF</button>
     <div class="container">
         {{ .Content }}
     </div>
