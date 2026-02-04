@@ -42,8 +42,10 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 0.9rem;
+            text-decoration: none;
+            display: inline-block;
         }
-        .print-btn:hover { background: #0055aa; }
+        .print-btn:hover { background: #0055aa; color: white; }
         @media print {
             body { background: white; margin: 0; }
             .container { border: none; box-shadow: none; padding: 0; }
@@ -52,7 +54,11 @@
     </style>
 </head>
 <body>
+    {{- if .Params.pdf }}
+    <a href="/resumes/{{ .Params.pdf }}" download class="print-btn">Download PDF</a>
+    {{- else }}
     <button class="print-btn" onclick="window.print()">Save as PDF</button>
+    {{- end }}
     <div class="container">
         {{ .Content }}
     </div>
